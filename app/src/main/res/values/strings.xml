@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">SEE</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="userads">"User Ads"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_addad">Add Ad</string>
+    <string name="title_adhistory">Ads History</string>
+    <string name="title_rewards">Rewards</string>
+    <string name="title_wallet">Wallet</string>
+    <string name="loginlink">Log in</string>
+    <string name="registerit">\u0020 Register now</string>
+    <string name="instructions">
+Place your fingertip on the Fingerprint scanner to verify your identity
+</string>
+    <string name="hintmobileno">Mobile Number</string>
+    <string name="login">Log In</string>
+    <string name="forgot_password">Forgot Password? </string>
+    <string name="register_now">Dont have an account yet?  </string>
+    <string name="rate_ad">Rate Ad</string>
+    <string name="view_ad">View Ad</string>
+    <string name="title">Title</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="category">Category</string>
+    <string name="intrest">Interest</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="post_add">Post Add</string>
+    <string name="amount">Amount</string>
+    <string name="already_a_member">Already a member?</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="cnic">CNIC</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="create_account">Create Account</string>
+    <string name="type">Type</string>
+    <string name="ads">Ads</string>
+    <string name="consecutive_ads">Consecutive Ads</string>
+    <string name="loginvia">Login via fingerprint</string>
+    <string name="fingerprint_authentication">Fingerprint Authentication</string>
+    <string name="ads_history">Ads History</string>
+    <string name="coins">Coins</string>
+    <string name="time">Time</string>
+    <string name="home">Home</string>
+    <string name="videos_watched">Videos Watched</string>
+    <string name="points">SEE Coins</string>
+    <string name="selectdob">Select Date of Birth</string>
+    <string name="profile">Profile</string>
+    <string name="level_1">Level 1</string>
+    <string name="full_name">Full name</string>
+    <string name="contact_no">Contact Num</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="share">Share</string>
+    <string name="authanticaion">Authenticating...</string>
+    <string name="loadingrewards">Loading Rewards...</string>
+    <string name="creatingaccount">Creating Account...</string>
+    <string name="updatingprofile">Updating Profile...</string>
+    <string name="updatinglotery">Updating Lotery...</string>
+    <string name="lotery">Lottery</string>
+    <string name="gettingcoins">Loading Coins...</string>
+    <string name="processing">Processing...</string>
+    <string name="maxviews">Max Views</string>
+
+    <string name="withdrawmanually">Withdraw Manually</string>
+    <string name="entryamount">Please Enter Amount</string>
+    <string name="uploadvideo">Upload Video</string>
+    <string name="uploadthumnail">Upload Thumnail</string>
+    <string name="novideotxt">No Video Selected</string>
+    <string name="noimagetext">No Image Selected</string>
+    <string name="adurl">Ad Url</string>
+    <string name="ok">Ok</string>
+    <string name="tokenregistering">Registering Token...</string>
+    <string name="updating">Updating...</string>
+    <string name="posting_new_add">Posting New Ad....</string>
+    <string name="loging">Logging Out...</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="rewards">Rewards</string>
+    <string name="wallet">Wallet</string>
+    <string name="redeem">Redeem</string>
+    <string name="pts">0 PTS</string>
+    <string name="pkr">PKR</string>
+    <string name="ppkr">0 PKR</string>
+    <string name="withdrawn_request">Withdrawn Request</string>
+    <string name="finca_bank">Finca Bank</string>
+    <string name="proceed">Proceed</string>
+    <string name="post_ad">Post Ad</string>
+    <string name="ad_name">Ad Name</string>
+    <string name="add_comments_here">Add Comment Here</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="caancel">Cancel</string>
+    <string name="demo">Demo</string>
+    <string name="intro">Intro</string>
+    <string name="skip">Skip</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="level">Level </string>
+    <string name="changelanguge">Change Language</string>
+    <string name="loadingcata">Loading Categories...</string>
+    <string name="loadingadds">Loading Ads...</string>
+    <string name="loadingdetails">Loading Details...</string>
+    <string name="loadinghistory">Loading Ads History...</string>
+    <string name="congotext">Congratulations! You are at Level 1</string>
+    <string name="bottontext">Remaining Ads for Next Level
+0000100
+</string>
+
+
+    <string name="logout">Log out </string>
+    <string name="dailog_logout">Are you sure you want to logout ?</string>
+    <string name="changelag">English</string>
+    <string-array name="age">
+        <item>18-25</item>
+        <item>26-33</item>
+        <item>34-41</item>
+        <item>42-49</item>
+        <item>above 50</item>
+    </string-array>
+</resources>

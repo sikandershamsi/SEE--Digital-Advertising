@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.see.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.see.ui.dashboard.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_adshistory"
+        android:name="com.see.ui.notifications.AdsHistoryFragment"
+        android:label="@string/title_adhistory"
+        tools:layout="@layout/fragment_adshistory" />
+    <fragment
+        android:id="@+id/navigation_rewards"
+        android:name="com.see.ui.notifications.RewardsFragment"
+        android:label="@string/title_rewards"
+        tools:layout="@layout/fragment_rewards" />
+    <fragment
+        android:id="@+id/navigation_wallet"
+        android:name="com.see.ui.notifications.WalletFragment"
+        android:label="@string/title_wallet"
+        tools:layout="@layout/fragment_dashboard" />
+</navigation>

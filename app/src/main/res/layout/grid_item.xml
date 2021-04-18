@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center_horizontal"
+    >
+
+    <ImageView
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:scaleType="fitCenter"
+        android:id="@+id/listitemImageView1"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:textColor="#FEFEFE"
+        android:id="@+id/filename"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:textColor="#FEFEFE"
+        android:id="@+id/thumb"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:textColor="#FEFEFE"
+        android:id="@+id/baseurl"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:textColor="#FEFEFE"
+        android:id="@+id/id"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:text="Medium Text"
+        android:textColor="#FEFEFE"
+        android:id="@+id/listitemTextView1"/>
+
+</LinearLayout>

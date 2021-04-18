@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.home.HomeFragment"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/edit_profile_back_btn"
+
+                android:layout_marginStart="8dp"
+                android:layout_width="32dp"
+                android:scaleType="center"
+                android:layout_height="match_parent"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/consecutive_ads"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:layout_marginStart="32dp"/>
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:src="@drawable/ic_back"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="40dp"/>
+            <Button
+                android:id="@+id/rate_ad"
+                android:background="#ffffff"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:text="@string/rate_ad"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_marginEnd="10dp"
+                android:layout_height="40dp"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/exoplayerview"
+        app:hide_on_touch="true"
+        app:show_timeout="5000"
+        app:rewind_increment="10000"
+        app:fastforward_increment="10000"
+        app:use_controller="true"
+        android:background="#000000"
+        app:player_layout_id="@layout/exo_simple_player_view"
+        />
+
+
+    <TextView
+        android:id="@+id/duraTion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:visibility="invisible"
+        android:background="@drawable/timer_background"
+        android:textColor="#ffffff"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ProgressBar
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/progress_bar"
+        android:layout_centerInParent="true"/>
+
+
+    <ImageView
+        android:id="@+id/website"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/web"
+        />
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/share"
+        />
+</RelativeLayout>

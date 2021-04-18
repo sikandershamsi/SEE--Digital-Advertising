@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.home.HomeFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/edit_profile_back_btn"
+
+                android:layout_marginStart="8dp"
+                android:layout_width="32dp"
+                android:scaleType="center"
+                android:layout_height="match_parent"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ads"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:layout_marginStart="32dp"/>
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:src="@drawable/ic_back"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="40dp"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:paddingTop="20dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+
+
+        <GridView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:columnWidth="130dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/watchuseradbtns"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:id="@+id/mainGridView1"/>
+
+    </LinearLayout>
+</RelativeLayout>

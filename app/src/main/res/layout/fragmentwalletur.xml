@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/common_menu"
+        android:background="@color/colorAccent"
+        app:title="@string/wallet"
+        app:titleTextColor="@color/white">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/redeem"
+        android:textColor="@color/white"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:paddingStart="25dp"/>
+    <TextView
+        android:id="@+id/pointsheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/title"
+        android:text="@string/points"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:paddingStart="25dp"
+
+        />
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/pointsheading"
+        android:text="@string/pts"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:paddingStart="25dp"
+
+        />
+
+    <TextView
+        android:id="@+id/videoswatchedheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="25dp"
+        android:paddingStart="300dp"
+        android:text="@string/pkr"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/videoswatched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/pointsheading"
+        android:text="@string/ppkr"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:paddingStart="300dp"/>
+    <TextView
+        android:id="@+id/loteryheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@+id/pointsheading"
+        android:layout_below="@+id/title"
+        android:text="@string/lotery"
+        android:layout_marginRight="150dp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:id="@+id/loterycount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/loteryheading"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/loteryheading"
+        android:layout_marginStart="150dp"
+        android:text="01"
+        android:textStyle="bold"
+        android:layout_marginTop="1dp"
+        android:textSize="15dp"
+        />
+    <ImageView
+        android:id="@+id/withdrawicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoswatched"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/withdrawicon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoswatched"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="270dp"
+        android:text="@string/withdrawn_request"
+
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/bank_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:layout_below="@+id/withdrawicon"
+
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/male_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:paddingStart="50dp"
+            android:paddingEnd="3dp"
+            android:textStyle="bold"
+            android:text="@string/withdrawmanually"
+            android:textColor="@color/white"
+            android:theme="@style/RadioButtonStyle" />
+    </RadioGroup>
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:background="@drawable/proceedbtn"
+        android:layout_below="@+id/bank_radio_group"
+        android:layout_marginTop="10dp"
+        android:text="@string/proceed"
+        android:textSize="20dp"
+        android:id="@+id/proccedbtn"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:id="@+id/postadbtn"
+        android:background="@drawable/proceedbtn"
+        android:layout_below="@+id/proccedbtn"
+        android:layout_marginTop="35dp"
+        android:text="@string/post_ad"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

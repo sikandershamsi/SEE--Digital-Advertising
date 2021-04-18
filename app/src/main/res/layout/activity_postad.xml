@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.home.HomeFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/back_btn"
+                android:src="@drawable/ic_back"
+                android:layout_marginStart="8dp"
+                android:layout_width="32dp"
+                android:scaleType="center"
+                android:layout_height="match_parent"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/post_ad"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:layout_marginStart="32dp"/>
+
+            <ImageView
+                android:id="@+id/logout_btn"
+                android:src="@drawable/logoutocon"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_width="30dp"
+                android:layout_margin="10dp"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg"
+        android:layout_below="@+id/toolbar"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <ImageView android:src="@drawable/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal" />
+
+
+            <EditText android:id="@+id/input_title"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/prfi"
+                android:drawablePadding="20dp"
+                android:paddingLeft="12dp"
+                android:background="@drawable/fieldbg"
+
+                android:hint="@string/title" />
+
+
+            <EditText
+                android:id="@+id/input_views"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/fieldbg"
+                android:drawableLeft="@drawable/prfi"
+                android:drawablePadding="20dp"
+                android:hint="@string/maxviews"
+                android:inputType="textPersonName"
+                android:paddingLeft="12dp"
+                android:textColor="@color/white"
+
+                android:textColorHint="@color/white" />
+
+            <TextView android:id="@+id/input_fromdate"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:inputType="date"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/cfi"
+                android:drawablePadding="30dp"
+                android:paddingLeft="12dp"
+                android:background="@drawable/fieldbg"
+                android:hint="@string/start_date" />
+
+
+
+
+
+            <TextView android:id="@+id/input_todate"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:inputType="date"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@drawable/cfi"
+                android:drawablePadding="30dp"
+                android:paddingLeft="12dp"
+                android:background="@drawable/fieldbg"
+                android:hint="@string/end_date" />
+
+
+
+
+            <Spinner android:id="@+id/input_category"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:paddingStart="80dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/cnicfi"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="30dp"
+                android:paddingLeft="12dp"
+                android:background="@drawable/app_button"
+                android:hint="@string/category" />
+
+            <!--<EditText android:id="@+id/input_intrest"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/prfi"
+                android:drawablePadding="20dp"
+                android:paddingLeft="12dp"
+                android:background="@drawable/fieldbg"
+
+                android:hint="@string/intrest" />-->
+            <Spinner android:id="@+id/input_age"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:inputType="number"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="20dp"
+                android:paddingStart="80dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/prfi"
+                android:drawablePadding="20dp"
+                android:paddingLeft="12dp"
+                android:background="@drawable/age_button"
+                android:entries="@array/age" />
+
+
+
+
+            <EditText android:id="@+id/input_country"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:inputType="textCapCharacters"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/cnicfi"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="30dp"
+                android:paddingLeft="12dp"
+                android:maxLength="13"
+                android:background="@drawable/fieldbg"
+                android:hint="@string/country"/>
+            <EditText android:id="@+id/input_city"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/prfi"
+                android:drawablePadding="20dp"
+                android:paddingLeft="12dp"
+                android:background="@drawable/fieldbg"
+
+                android:hint="@string/city" />
+            <EditText android:id="@+id/input_adurl"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:inputType="textUri"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/prfi"
+                android:drawablePadding="20dp"
+                android:paddingLeft="12dp"
+                android:background="@drawable/fieldbg"
+
+                android:hint="@string/adurl" />
+
+
+         <!--   <EditText
+                android:id="@+id/input_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/fieldbg"
+                android:drawableLeft="@drawable/amount_button"
+                android:drawablePadding="30dp"
+                android:hint="@string/amount"
+                android:inputType="number"
+                android:paddingLeft="12dp"
+
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />-->
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:weightSum="2"
+                android:layout_below="@+id/welcome"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/selectvideo"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="24dp"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:text="@string/novideotxt"
+                    android:layout_marginStart="20dp"
+                    >
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/video_upload_ad"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:background="@drawable/loginbtn"
+                    android:text="@string/uploadvideo"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:weightSum="2"
+                android:id="@+id/watchuseradbtns"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/selectimage"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:textColor="@color/white"
+                    android:text="@string/noimagetext"
+                   android:layout_marginStart="20dp"
+                    >
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/upload_thumbnail"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:background="@drawable/loginbtn"
+                    android:text="@string/uploadthumnail"/>
+            </LinearLayout>
+
+            <!-- Signup Button -->
+            <Button
+                android:id="@+id/btn_Addad"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="200dp"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:background="@drawable/loginbtn"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/post_ad"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

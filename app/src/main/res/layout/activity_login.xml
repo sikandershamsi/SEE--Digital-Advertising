@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="56dp"
+    android:background="@drawable/bg"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/cahngelanguage"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+           android:background="@drawable/languagebg"
+            android:text="@string/changelag"
+            android:textColor="@color/white"
+
+
+            />
+
+        <Button
+            android:id="@+id/demo"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+           android:background="@drawable/languagebg"
+            android:text="@string/demo"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+
+
+
+            />
+    </RelativeLayout>
+
+
+    <ImageView android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center_horizontal" />
+
+
+    <EditText android:id="@+id/input_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:inputType="phone"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/mfi"
+        android:drawablePadding="30dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="12dp"
+        android:background="@drawable/fieldbg"
+        android:hint="@string/mobile_number" />
+
+
+
+    <EditText android:id="@+id/input_password"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/pfi"
+        android:drawablePadding="30dp"
+        android:paddingLeft="12dp"
+        android:background="@drawable/fieldbg"
+        android:hint="@string/password"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fingerprint_white_24dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/input_password"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/loginbtn"
+        android:text="@string/login"/>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        >
+
+        <TextView android:id="@+id/regiter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/register_now"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+
+            android:textSize="16dip"/>
+
+        <TextView
+            android:id="@+id/link_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="200dp"
+            android:text="@string/registerit"
+            android:textColor="@color/colorAccent"
+            android:textSize="16dip" />
+    </RelativeLayout>
+
+
+</LinearLayout>

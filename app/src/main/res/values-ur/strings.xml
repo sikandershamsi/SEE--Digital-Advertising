@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">سی</string>
+    <string name="title_activity_login">سائن ان</string>
+    <string name="prompt_email">ای میل</string>
+    <string name="prompt_password">پاس ورڈ</string>
+    <string name="action_sign_in">سائن ان کریں یا رجسٹر ہوں</string>
+    <string name="action_sign_in_short">سائن ان</string>
+    <string name="welcome">"خوش آمدید !"</string>
+    <string name="invalid_username">درست صارف نام نہیں</string>
+    <string name="invalid_password">پاس ورڈ ہونا ضروری ہے >کردار 5 </string>
+    <string name="login_failed">"لاگ ان ناکام رہے"</string>
+    <string name="title_activity_dashboard">ڈیش بورڈ</string>
+    <string name="title_home">ھوم</string>
+    <string name="updatinglotery">اپ ڈیٹنگ لاٹرئ...</string>
+    <string name="lotery">لاٹری</string>
+    <string name="title_profile">پروفائل</string>
+    <string name="withdrawmanually">نقد رقم نکلوائيں</string>
+    <string name="title_addad">اشتہار شامل کریں</string>
+    <string name="ok">ٹھیک ہے</string>
+    <string name="uploadvideo">ویڈیو اپ لوڈ کریں</string>
+    <string name="uploadthumnail">تھمب نیل اپ لوڈ کریں</string>
+    <string name="novideotxt">کوئی ویڈیو منتخب نہیں ہوئی</string>
+    <string name="noimagetext">کوئی امیج منتخب نہیں ہوئی</string>
+    <string name="adurl">یو آر ایل</string>
+    <string name="title_adhistory">اشتہارات کی تاریخ</string>
+    <string name="entryamount">برائے مہربانی رقم داخل کریں</string>
+    <string name="title_rewards">انعامات</string>
+    <string name="title_wallet">پرس</string>
+    <string name="userads">"صارف کے اشتہارات"</string>
+    <string name="instructions">
+       اپنی شناخت کی تصدیق کے لیے فنگر پرنٹ اسکینر پر اپنی انگلی رکھیں
+</string>
+    <string name="loginlink">لاگ ان کریں</string>
+    <string name="registerit">\u0020  ابھی رجسٹر کریں</string>
+    <string name="intro">انٹرو</string>
+    <string name="skip">چھوڑ دو</string>
+    <string name="hintmobileno">موبائل فون کانمبر</string>
+    <string name="login">لاگ ان</string>
+    <string name="maxviews">زیادہ سے زیادہ آراء</string>
+    <string name="demo">ڈیمو</string>
+    <string name="forgot_password">پاسورڈ بھول گے ؟</string>
+    <string name="register_now">\u0020ابھی تک کوئی اکاؤنٹ نہیں ہے؟ </string>
+    <string name="rate_ad">شرح اشتہار</string>
+    <string name="view_ad">اشتہار دیکھیں</string>
+    <string name="loadingrewards">انعامات لوڈ ہورہے ہیں…</string>
+    <string name="processing">پروسیسنگ…</string>
+    <string name="authanticaion">تصدیق کر رہا ہے…</string>
+    <string name="posting_new_add">تصدیق کر رہا ہے…</string>
+    <string name="updating">اپ ڈیٹ کر رہا ہے ....</string>
+    <string name="tokenregistering">ٹوکن کی رجسٹریشن ہو رہی ہے…</string>
+    <string name="title">عنوان</string>
+    <string name="logout">لاگ آؤٹ</string>
+    <string name="share">شيئر</string>
+    <string name="changelanguge">زبان تبدیل کریں</string>
+    <string name="creatingaccount">اکاؤنٹ بنا رہے…</string>
+    <string name="updatingprofile">پروفائل کو اپ ڈیٹ کر رہے ہیں…</string>
+    <string name="gettingcoins"> کوئین لوڈ ہو رہے ہیں…</string>
+    <string name="dailog_logout">
+کیا آپ واقعی لاگ آؤٹ کرنا چاہتے ہیں؟</string>
+    <string name="start_date">شروع کرنے کی تاریخ</string>
+    <string name="end_date">آخری تاریخ</string>
+    <string name="yes">جی ہاں</string>
+    <string name="no">نہیں</string>
+    <string name="category">اقسام</string>
+    <string name="intrest">دلچسپی</string>
+    <string name="country">ملک</string>
+    <string name="city">شہر</string>
+    <string name="post_add">پوسٹ شامل کریں</string>
+    <string name="amount">رقم</string>
+    <string name="already_a_member">پہلے سے ہی رکن؟ </string>
+    <string name="username">صارف نام</string>
+    <string name="password">پاس ورڈ</string>
+    <string name="email">ای میل</string>
+    <string name="mobile_number">موبائل فون کانمبر</string>
+    <string name="cnic">شناختی کارڈ</string>
+    <string name="date_of_birth">پیدائش کی تاریخ</string>
+    <string name="create_account">اکاؤنٹ بنائیں</string>
+    <string name="type">قسم</string>
+    <string name="ads">اشتہارات</string>
+    <string name="consecutive_ads">لگاتار اشتہارات</string>
+    <string name="loginvia">فنگر پرنٹ کے ذریعے لاگ ان کریں</string>
+    <string name="fingerprint_authentication">فنگر پرنٹ کی توثیق</string>
+    <string name="ads_history">اشتہارات کی تاریخ</string>
+    <string name="coins">سکے</string>
+    <string name="time">وقت</string>
+    <string name="home">ھوم</string>
+    <string name="videos_watched">دیکھی گئ ويڈیوز</string>
+    <string name="points"> سی کوئین</string>
+    <string name="selectdob">تاریخ پیدائش منتخب کریں</string>
+    <string name="profile">پروفائل</string>
+    <string name="level_1">سطح 1</string>
+    <string name="level">سطح </string>
+    <string name="loadingcata">زمرے لوڈ ہورہے ہیں…</string>
+    <string name="full_name">پورا نام</string>
+    <string name="contact_no">نمبر</string>
+    <string name="gender">صنف</string>
+    <string name="male">مرد</string>
+    <string name="female">عورت</string>
+    <string name="loging">لاگنگ آؤٹ…</string>
+    <string name="update_profile">پروفائل کو اپ ڈیٹ کریں</string>
+    <string name="rewards">انعامات</string>
+    <string name="wallet">پرس</string>
+    <string name="redeem">رقم نکالیں</string>
+    <string name="pts"> 0 پوائنٹس</string>
+    <string name="pkr">روپے</string>
+    <string name="ppkr">0 روپے</string>
+    <string name="withdrawn_request">رقم نکلوایں</string>
+    <string name="finca_bank">فنکا بینک</string>
+    <string name="proceed">آگے بڑھو</string>
+    <string name="post_ad">پوسٹ اشتہار</string>
+    <string name="ad_name">اشتہار کا نام</string>
+    <string name="add_comments_here">یہاں تبصرے شامل کریں</string>
+    <string name="rate_now">درجہ بندی کریں</string>
+    <string name="caancel">منسوخ کریں</string>
+    <string name="changelag">اردو</string>
+    <string name="congotext">مبارک ہو! آپ سطح 1 پر ہیں</string>
+    <string name="bottontext">
+        اگلے درجے کے باقی اشتہارات
+
+
+        000100
+</string>
+    <string name="loadingadds">اشتہارات لوڈ ہورہے ہیں…</string>
+    <string name="loadingdetails">تفصیلات لوڈ ہورہے ہیں…</string>
+    <string name="loadinghistory">اشتہاروں کی تاریخ لوڈ ہو رہی ہے…</string>
+
+
+</resources>

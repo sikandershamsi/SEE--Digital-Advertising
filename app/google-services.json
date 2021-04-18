@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "370113952676",
+    "firebase_url": "https://seetech-95c75.firebaseio.com",
+    "project_id": "seetech-95c75",
+    "storage_bucket": "seetech-95c75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370113952676:android:701cd8de54b57705451f31",
+        "android_client_info": {
+          "package_name": "com.see"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370113952676-nrlpbaoe4kv8i0tpr8hfebo6ffe9fhs3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAOUUfcVJkfiy_Uet_cSTfG8mKqeFuSmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370113952676-nrlpbaoe4kv8i0tpr8hfebo6ffe9fhs3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

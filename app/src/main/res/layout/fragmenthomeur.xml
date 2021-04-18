@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/common_menu"
+        android:background="@color/colorAccent"
+        app:title="@string/home"
+        app:titleTextColor="@color/white"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/playvideo"
+            android:layout_marginRight="10dp"
+            >
+        </ImageView>
+        <TextView
+            android:id="@+id/videoswatched"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/videoswatchedheading"
+            android:layout_alignStart="@+id/videoswatchedheading"
+            android:text="200"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:textSize="15dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/coins"
+            android:layout_marginRight="10dp"
+           >
+        </ImageView>
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/pointsheading"
+            android:text="20.00"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:textSize="15dp"
+            android:layout_marginStart="120dp"
+            />
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mvieww"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="wrap_content"
+
+        android:layout_height="125dp" />
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/mvieww"
+        android:text="@string/welcome"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="21dp"
+        />
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/watchuseradbtns"
+        android:layout_below="@+id/welcome"
+        android:orientation="horizontal">
+
+        <ImageView   android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/consecbtn"
+            android:src="@drawable/consectiveaddur"
+            />
+
+        <ImageView   android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/watchuseradbtn"
+            android:src="@drawable/useradurdu"
+            />
+
+    </LinearLayout>
+
+    <GridView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:columnWidth="130dp"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/watchuseradbtns"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:id="@+id/mainGridView1"/>
+</RelativeLayout>
